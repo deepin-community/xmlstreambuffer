@@ -1,0 +1,26 @@
+xmlstreambuffer (1.5.4-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Wed, 23 Dec 2020 18:58:00 +0100
+
+xmlstreambuffer (1.5.4-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+    - New build dependency on libmaven-bundle-plugin-java
+  * Build with the DH sequencer instead of CDBS
+  * Enabled the unit tests
+  * Removed the unused build dependency on glassfish-activation
+  * Removed the build dependency on libstax-java (provided by libstax-ex-java)
+  * Standards-Version updated to 3.9.8
+  * Use secure Vcs-* URLs
+
+ -- Emmanuel Bourg <ebourg@apache.org>  Wed, 27 Jul 2016 22:27:29 +0200
+
+xmlstreambuffer (1.5.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #732230)
+
+ -- Timo Aaltonen <tjaalton@ubuntu.com>  Tue, 25 Feb 2014 12:23:25 +0100

@@ -1,0 +1,10 @@
+
+org.apache.maven.plugins maven-enforcer-plugin * * * *
+org.apache.maven.plugins maven-javadoc-plugin * * * *
+org.apache.maven.plugins maven-release-plugin * * * *
+org.apache.maven.plugins maven-source-plugin * * * *
+org.codehaus.mojo buildnumber-maven-plugin * * * *
+org.codehaus.mojo cobertura-maven-plugin * * * *
+org.codehaus.mojo findbugs-maven-plugin * * * *
+org.codehaus.woodstox wstx-asl * * * *
+org.glassfish.copyright glassfish-copyright-maven-plugin * * * *

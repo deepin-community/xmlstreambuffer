@@ -1,0 +1,4 @@
+version=3
+opts="uversionmangle=s/-(alpha|beta)-/~$1/" \
+  https://svn.java.net/svn/xmlstreambuffer~svn/tags/ \
+  streambuffer-(\d.*)/ debian debian/orig-tar.sh

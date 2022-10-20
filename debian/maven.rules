@@ -1,0 +1,3 @@
+
+s/javax.xml.stream/stax/ stax-api jar s/1.0.2/1.0.1/ * *
+junit junit jar s/3\..*/3.x/ * *

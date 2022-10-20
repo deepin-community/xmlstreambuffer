@@ -1,0 +1,44 @@
+Source: xmlstreambuffer
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Timo Aaltonen <tjaalton@ubuntu.com>
+Build-Depends:
+ debhelper (>= 9),
+ default-jdk,
+ javahelper,
+ junit,
+ libmaven-bundle-plugin-java,
+ libstax-ex-java,
+ maven-debian-helper (>= 2.0)
+Standards-Version: 3.9.8
+Vcs-Git: https://anonscm.debian.org/git/pkg-java/xmlstreambuffer.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-java/xmlstreambuffer.git
+Homepage: http://xmlstreambuffer.java.net
+
+Package: libstreambuffer-java
+Architecture: all
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
+Description: XML Stream Buffer
+ A stream buffer is a stream-based representation of an XML
+ info-set in Java. Stream buffers are designed to: provide
+ very efficient stream-based memory representations of XML
+ info-sets; and be created and processed using any Java-based
+ XML API.
+ .
+ Conceptually a stream buffer is similar to the representation
+ used in the Xerces deferred DOM implementation, with the crucial
+ difference that a stream buffer does not store hierarchical
+ information like parent and sibling information. The deferred
+ DOM implementation reduces memory usage when large XML documents
+ are parsed but only a subset of the document needs to be processed.
+ (Note that using deferred DOM will be more expensive than
+ non-deferred DOM in terms of memory and processing if all
+ the document is traversed.)
+ .
+ Stream buffers may be used as an efficient alternative to DOM where:
+ * most or all of an XML info-set will eventually get traversed; and/or
+ * targeted access to certain parts of an XML info-set are required
+   and need to be efficiently processed using stream-based APIs like
+   SAX or StAX.
